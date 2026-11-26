@@ -1,0 +1,15 @@
+[Unit]
+Description=Bank Account Fraud Detection API
+After=network.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/root/BankFraudDetection
+ExecStart=/root/BankFraudDetection/.venv/bin/uvicorn fraudDetectionApi:app --host 0.0.0.0 --port 8000
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
