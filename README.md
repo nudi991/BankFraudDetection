@@ -8,6 +8,13 @@ This project aims to identify fraudulent applications while limiting the number 
 
 The primary evaluation objective is to maximize the **True Positive Rate (TPR)** while maintaining a **False Positive Rate (FPR) of no more than 5%**.
 
+## Requirements
+
+- Python 3.13 or later
+- pip
+
+The project dependencies are listed in `requirements.txt`.
+
 ## Dataset
 
 - **Source:** Bank Account Fraud (BAF) Dataset
